@@ -1,0 +1,227 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+html, body {
+    direction: rtl;
+    text-align: right;
+}
+
+h1,h2 {
+    margin: 0;  
+}
+
+header {
+ display: flex;
+ justify-content: space-around;
+ flex-direction: row-reverse;
+ align-items: center;   /* добавили вертикальное выравнивание */
+  gap: 16px;
+  position: relative;
+}
+
+.header_icons {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 15px;
+    height: 30px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    color: #684597;
+}
+.icons-message {
+    margin-right: 10px;
+}
+.icons-whatsapp{
+    position: relative;
+    top: 15%;
+    transform: translateY(-50%);
+}
+
+
+nav {
+}
+
+.nav_items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav_item {
+    list-style: none;
+    width: max-content;
+    
+    
+}
+.nav_link {
+    font-size: 19px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #684597;
+    margin-right: 3px;
+    padding: 10px;
+
+}
+.active,
+.nav_link:hover {
+    background-color: #684597;
+    color: #ffffff;
+    
+}
+
+.header-logo {
+    height: 100px;
+}
+
+.burger{
+  display: none;         /* на ПК скрыт */
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.burger span{
+  display: block;
+  height: 3px;
+  margin: 6px 0;
+  background: #684597;   /* твой фиолетовый */
+  border-radius: 4px;
+  transition: .25s;
+}
+
+
+/* ---------- BURGER ---------- */
+.burger{
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: 2001;
+}
+
+.burger span{
+  display: block;
+  height: 3px;
+  margin: 6px 0;
+  background: #684597;
+  border-radius: 3px;
+  transition: .3s;
+}
+
+/* ---------- MOBILE MENU ---------- */
+@media (max-width: 900px){
+
+  .burger{ display:block; }
+
+  /* fullscreen overlay */
+  .nav_list{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    transition: .4s ease;
+    z-index: 2000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* когда открыто */
+  header.menu-open .nav_list{
+    right: 0;
+  }
+
+  /* список по центру экрана */
+  .nav_items{
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .nav_link{
+    font-size: 28px;
+  }
+
+  /* анимация в крестик */
+  header.menu-open .burger span:nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+  }
+  header.menu-open .burger span:nth-child(2){
+    opacity: 0;
+  }
+  header.menu-open .burger span:nth-child(3){
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
+
+.main {
+    position: relative;
+}
+
+.hero {
+    display: flex;
+    height: 90vh;
+    background-image: url(../img/hero-img2.png);
+    background-size: cover;      /* 🔥 ВОТ ЭТО ГЛАВНОЕ */
+    background-repeat: no-repeat;
+}
+/* БЕЛАЯ ПОДСВЕТКА */
+.hero::before{
+    content: "";
+    position: absolute;
+
+    inset: 0;
+    background: rgba(255,255,255,0.55); /* степень «засвета» */
+    z-index: 1;
+}
+.hero-container {
+    width: 50%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    align-self: center;
+}
+
+.hero-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #28008e;
+}
+.hero-container h2 {
+    font-size: 40px;
+}
+.hero-container p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media (max-width: 800px){
+    .hero {
+        background-image: url(../img/hero-img-mobile.png);
+    }
+    .hero-container {
+        width: 90%;
+    }
+    .hero-container h1 {
+        font-size: 32px;
+    }
+    .hero-container h2 {
+        font-size: 25px;
+    }
+}
