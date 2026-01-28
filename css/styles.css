@@ -7,6 +7,8 @@ body {
     direction: rtl;
     text-align: right;
     position: relative;
+    scroll-behavior: smooth;
+
 }
 
 h1,
@@ -455,4 +457,37 @@ nav {}
     .starts-items_item {
         max-width: 500px;
     }
+}
+
+.footer {
+    background-color: #684597;
+    padding: 12px;
+}
+.footer-nav {
+    padding: 10px;
+
+}
+.footer-title-list {
+    font-size: 20px;
+    color: #edcd00;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+.footer-list_item {
+    
+}
+
+.footer-list_item-link {
+    display: inline-block;
+    color: white;
+    padding: 0px 20px;
+    font-size: 22px;
+}
+.footer-list_item-link:hover {
+    background-color: #3f444b;
 }
