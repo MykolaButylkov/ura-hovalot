@@ -463,6 +463,7 @@ nav {}
 .footer {
     background-color: #684597;
     padding: 12px;
+    color: #fff;
 }
 @media (min-width: 800px) {
     .footer {
