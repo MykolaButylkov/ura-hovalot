@@ -1,5 +1,6 @@
 * {
     font-family: "Roboto", sans-serif;
+    font-size: 20px;
 }
 
 html,
@@ -462,6 +463,12 @@ nav {}
 .footer {
     background-color: #684597;
     padding: 12px;
+}
+@media (min-width: 800px) {
+    .footer {
+        display: flex;
+    }
+
 }
 .footer-nav {
     padding: 10px;
