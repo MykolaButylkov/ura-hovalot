@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -49,13 +55,13 @@
             </div>
             <nav class="nav_list">
                 <ul class="nav_items">
-                    <li class="nav_item"><a class="nav_link active" href="https://mykolabutylkov.github.io/ura-hovalot/">הובלות דירות</a></li>
+                    <li class="nav_item"><a class="nav_link" href="https://mykolabutylkov.github.io/ura-hovalot/">הובלות דירות</a></li>
                     <li class="nav_item"><a class="nav_link" href="https://mykolabutylkov.github.io/ura-hovalot/הובלת-דירה/">הובלת דירה</a></li>
-                    <li class="nav_item"><a class="nav_link" href="/https://mykolabutylkov.github.io/ura-hovalot/הובלות-משרדים/">הובלות משרדים</a></li>
-                    <li class="nav_item"><a class="nav_link" href="/https://mykolabutylkov.github.io/ura-hovalot/שירותי-אחסנה/">שירותי אחסון</a></li>
-                    <li class="nav_item"><a class="nav_link" href="/https://mykolabutylkov.github.io/ura-hovalot/שירותים/">שירותים נוספים</a></li>
-                    <li class="nav_item"><a class="nav_link" href="/https://mykolabutylkov.github.io/ura-hovalot/אודות-2/">אודות</a></li>
-                    <li class="nav_item"><a class="nav_link" href="/https://mykolabutylkov.github.io/ura-hovalot/צור-קשר/">צור קשר</a></li>
+                    <li class="nav_item"><a class="nav_link" href="https://mykolabutylkov.github.io/ura-hovalot/הובלות-משרדים/">הובלות משרדים</a></li>
+                    <li class="nav_item"><a class="nav_link" href="https://mykolabutylkov.github.io/ura-hovalot/שירותי-אחסנה/">שירותי אחסון</a></li>
+                    <li class="nav_item"><a class="nav_link" href="https://mykolabutylkov.github.io/ura-hovalot/שירותים/">שירותים נוספים</a></li>
+                    <li class="nav_item"><a class="nav_link" href="https://mykolabutylkov.github.io/ura-hovalot/אודות-2/">אודות</a></li>
+                    <li class="nav_item"><a class="nav_link" href="https://mykolabutylkov.github.io/ura-hovalot/צור-קשר/">צור קשר</a></li>
                 </ul>
             </nav>
 
@@ -66,5 +72,22 @@
             </button>
         </div>
     </header>
+
+    <section class="max-w-[1140px] mx-auto px-4 py-10">
+  <h1 class="text-3xl font-bold text-center mb-8">מאמרים אחרונים</h1>
+
+  <!-- сетка карточек -->
+  <div id="cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+  <!-- пагинация -->
+  <div id="pagination" class="flex justify-center items-center gap-2 mt-10"></div>
+</section>
+
+<script src="./js/articles.js"></script>
+
+
+    <script src="../js/burger-menu.js"></script>
+    <script src="../js/whatsappBtn.js"></script>
+    <script src="../js/active-link-hover.js"></script>
 </body>
 </html>
