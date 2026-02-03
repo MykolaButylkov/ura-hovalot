@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <title>מאמר</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header_icons">
+                <a href="tel:+9725280799448" class="icon icons-phone" aria-label="Позвонить">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+
+                <a href="#form-home-page" class="icon icons-message">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path
+                            d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                        <path
+                            d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                    </svg>
+
+                </a>
+                <a id="waBtn" href="https://wa.me/9725280799448" target="_blank" rel="noopener"
+                    class="icon icons-whatsapp" aria-label="Написать в WhatsApp" class="icon icons-whatsapp"><svg
+                        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                        <path fill="#fff"
+                            d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6	C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z">
+                        </path>
+                        <path fill="#fff"
+                            d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z">
+                        </path>
+                        <path fill="#cfd8dc"
+                            d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3	L4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z">
+                        </path>
+                        <path fill="#40c351"
+                            d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8	l6-1.6l0.6,0.3c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z">
+                        </path>
+                        <path fill="#fff" fill-rule="evenodd"
+                            d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0	s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3	c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9	c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8	c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8C20.6,19.3,19.7,17,19.3,16z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+            <nav class="nav_list">
+                <ul class="nav_items">
+                    <li class="nav_item"><a class="nav_link active"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/">הובלות דירות</a></li>
+                    <li class="nav_item"><a class="nav_link"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/הובלת-דירה/">הובלת דירה</a></li>
+                    <li class="nav_item"><a class="nav_link"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/הובלות-משרדים/">הובלות משרדים</a></li>
+                    <li class="nav_item"><a class="nav_link"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/שירותי-אחסנה/">שירותי אחסון</a></li>
+                    <li class="nav_item"><a class="nav_link"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/שירותים/">שירותים נוספים</a></li>
+                    <li class="nav_item"><a class="nav_link"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/אודות-2/">אודות</a></li>
+                    <li class="nav_item"><a class="nav_link"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/צור-קשר/">צור קשר</a></li>
+                </ul>
+            </nav>
+
+            <img class="header-logo" src="../img/logo2.png" alt="Alexo hovalot">
+
+            <button class="burger" aria-label="Меню" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+    <div style="height: 100px;"></div>
+    <main class="max-w-[1140px] mx-auto px-4 py-8">
+        <p class="mb-8"><span><a style="color: #6b45a7" class="text-sm"
+                    href="https://mykolabutylkov.github.io/ura-hovalot/">הובלות דירות</a> » <a style="color: #6b45a7"
+                    class="text-sm" href="https://mykolabutylkov.github.io/ura-hovalot/שירותים/">שירותים
+                    נוספים</a></span> </p>
+        <div class="my-6 h-px w-full bg-black"></div>
+
+        <!-- 2 колонки: контент + сайдбар -->
+        <div class="grid grid-cols-1 sm:grid-cols-3  lg:grid-cols-[1fr_3fr] gap-10 items-start">
+            <!-- ПРАВЫЙ САЙДБАР -->
+            <aside class="order-2 sm:order-1 lg:sticky lg:top-6">
+                <div style="max-width: 320px;" class="max-w-[320px] lg:max-w-none bg-white">
+                    <!-- Вставь сюда блок сайдбара из следующего раздела -->
+
+                    <!-- SIDEBAR START -->
+                    <div class="text-right">
+
+                        <!-- Заголовок -->
+                        <h2 class="text-xl font-bold text-black">
+                            שירותי החברה
+                        </h2>
+
+                        <!-- Навигация -->
+                        <nav class="mt-4">
+                            <ul class="space-y-3 text-[15px]">
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/">הובלות דירות</a></li>
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/הובלת-דירה/">הובלת דירה</a>
+                                </li>
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/הובלות-משרדים/">הובלות
+                                        משרדים</a></li>
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/שירותי-אחסנה/">שירותי
+                                        אחסון</a></li>
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/שירותים/">שירותים נוספים</a>
+                                </li>
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/אודות-2/">אודות</a></li>
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/צור-קשר/">צור קשר</a></li>
+                            </ul>
+                        </nav>
+
+                        <!-- Линия -->
+                        <div class="my-6 h-px w-full bg-black"></div>
+
+                        <!-- Посты -->
+                        <h3 class="text-lg font-bold text-black">פוסטים נוספים:</h3>
+
+                        <div class="mt-4 space-y-6">
+                            <article>
+                                <p class="text-sm leading-6 text-gray-600">
+                                    איך בחירת רכב תפעולי נכון יכולה לשנות את פני העסק
+                                </p>
+                                <a style="color: #6b45a7"
+                                    class="mt-2 inline-block text-sm text-[#6b45a7] hover:underline"
+                                    href="../articles/016.html">קרא עוד</a>
+                            </article>
+
+                            <article>
+                                <h4 class="font-bold text-black leading-snug">
+                                    המדריך להובלות של מבנים ניידים
+                                </h4>
+                                <p class="mt-1 text-sm leading-6 text-gray-500">
+                                    המדריך להובלות של מבנים ניידים הובלת מבנים ניידים היא משימה…
+                                </p>
+                                <a style="color: #6b45a7"
+                                    class="mt-2 inline-block text-sm text-[#6b45a7] hover:underline"
+                                    href="../articles/017.html">קרא עוד</a>
+                            </article>
+
+                            <article>
+                                <h4 class="font-bold text-black leading-snug">
+                                    היתרונות של הובלת דירה עם חברת הובלות
+                                </h4>
+                                <p class="mt-1 text-sm leading-6 text-gray-500">
+                                    היתרונות של הובלת דירה עם חברת הובלות…
+                                </p>
+                                <a style="color: #6b45a7"
+                                    class="mt-2 inline-block text-sm text-[#6b45a7] hover:underline"
+                                    href="../articles/018.html">קרא עוד</a>
+                            </article>
+                        </div>
+
+                        <!-- Линия -->
+                        <div class="my-6 h-px w-full bg-black/60"></div>
+
+                        <!-- Кнопка -->
+                        <a href="#"
+                            class="block w-full rounded-md bg-slate-600 py-3 text-center font-semibold text-white hover:bg-slate-700 transition">
+                            הצעת מחיר בקליק!
+                        </a>
+
+                        <!-- Телефон -->
+                        <a class="mt-4 block text-center text-[#6b45a7] font-medium" href="tel:+972723307828">
+                            טל': 052-80788448
+                        </a>
+                    </div>
+                    <!-- SIDEBAR END -->
+
+                </div>
+            </aside>
+
+            <!-- ЛЕВЫЙ КОНТЕНТ -->
+            <article class="gtid col-span-2 order-1 min-w-0 lg:order-2">
+
+                <div>
+                    <h1 class="text-xl sm:text-4xl font-bold leading-tight">שירותי הובלות במרכז – כך תכינו הכל.</h1>
+                    <p>&nbsp;</p>
+                    <p><span style="font-weight: 400;">כיום שירותי הובלות במרכז במרכז נחשבת לאחד מהעסקים העצמיים הנפוצים
+                            ביותר וזאת מאחר כי אזור המרכז הוא האזור המקובל ביותר בו עוברים דירה בתדירות יוצאת דופן מערים
+                            אחרות ברחבי הארץ. אם פעם היינו רגילים לארגן את הבית בכמה ימים לארוז אין ספור ארגזים ולהעביר
+                            בנגלות את &nbsp;החפצים שלו כיום קיים שירות חדשני ומקיף של שירותי הובלות במרכז.</span></p>
+                    <p><span style="font-weight: 400;">תחום שירותי הובלות במרכז זהו ענף אשר גדל מאוד והתפתח עד לאין
+                            שיעור בשנים האחרונות ולכן אנו מוצאים את האפשרות להיעזר בשירות הובלות דירה במרכז בלי צורך
+                            להתעייף כל כך.</span></p>
+                    <p>כל תהליך מעבר דירה הוא תהליך שונה וחדש , צריך לעזוב או מרצון או מפאת הצורך אבל עוזבים מקום שהיה
+                        לבית עבורנו ויש לנו ערך סנטימנטלי עבורו, על כן כל תהליך הפרידה מהבית הוא תהליך אפילו עצוב
+                        באיזשהו מקום , יש לאדם העובר דירה מספיק סידורים על הראש ולכן שירותי הובלות במרכז זהו שירות חיוני
+                        מאוד בעת הובלת דירה במרכז .</p>
+                    <p><span style="font-weight: 400;">הובלות במרכז לא פעם יכולה להימצא כתהליך די מיידע בעבור אותו אדם
+                            העובר דירה על אחת כמה וכמה כאשר מדובר בזוג או אפילו במשפחה שלמה, יש לארוז אין ספור חפצים
+                            ודברים של כמה אנשים לכן הובלות &nbsp;במרכז היא הפתרון שעשוי להציל אותנו במצבים כאלו.</span>
+                    </p>
+                    <p>עד כה מצאנו כל מני שיטות להובלה במרכז אולם הובלה יכולה להסתכם בניין של שעות , לעיתים אנו מחפשים
+                        כל מני דרכים בהן אפשר לחסוך בעלויות ושאנחנו לבטח נעשה את העבודה יותר טוב מכל אחד, האמנם תופתעו
+                        לדעת כי עבודת הובלה היא פעולה שצריכים להשאיר למקצוענים שיודעים לעשות את העבודה.<br>
+                    </p>
+                    <p><span style="font-weight: 400;">אפשר לנסות כל מני שיטות הובלות בתל אביב אבל למה להסתבך כל כך אם
+                            אפשר להשאיר את העבודה הקשה לחברה המתמחה בהובלות דירות במרכז הרבה יותר טוב ממך תהיה בטוח.
+                            &nbsp;ההובלה היא תהליך של כמה פעולות אשר יש לבצע ביסודיות פן תשכחו את המקרר מאחור ודרך אגב
+                            זה דבר שכבר קרה.</span></p>
+                    <p>&nbsp;</p>
+                    <h2><span style="font-weight: 400;">הובלת דירה במרכז באופן מסודר</span></h2>
+                    <p><span style="font-weight: 400;">על כן כדאי מאוד לבצע את המעבר באופן מסודר, אין צורך לדאוג לעלויות
+                            כי לא מדובר בהון תועפות לפעמים כדאי להיות חכמים ולא חסכנים. הובלת דירה בתל אביב מבנויה מכמה
+                            שלבים עליהם נפרט מיד באופן שבו תוכלו לחשוב בעצמכם אם יש באפשרותכם לבצע הובלות דירה במרכז
+                            והאם יש לכם את הכלים המתאימים בעבור העברת דירה במרכז. אפשר לכתוב את ואפשר לדבר על זה אולם
+                            לבצע את זה כבר סיפור אחר לגמרי, הובלת דירה זהו תהליך לא פשוט והובלות במרכז עוד פחות פשוט. על
+                            כן מיד נראה כיצד אפשר לבצע את המעבר דירה או משרד באופן הפשוט ביותר שניתן. </span></p>
+                    <p><span style="font-weight: 400;">שירותי הובלות במרכז כשמה כן היא פעולה בה מובילים את תכולת הדירה
+                            הישנה לדירה חדשה אליה עברתם כעת נוכל לראות לעומק כיצד באמת וכדאי להוביל דירה במרכז בשיטה
+                            היעילה ביותר והאולטימטיבית. הובלות במרכז מצריכה לא מעט אנשים בתמונה אם ברצונכם לארזו את הבית
+                            ולהוביל את הדברים האופן עצמאי כיום חברות להובלת דירה במרכז מחזיקות מובילים מנוסים אשר
+                            מובילים כל יום והגוף שלהם רגיל לעבודה מסוג זה. על כל מהלך חברת הובלות במרכז נרחיב בהמשך
+                            באופן מלא ופרטני יותר ונראה כיצד עובדת חברת הובלות במרכז ומי הם המובילים שאחראים לשלומם של
+                            הדברים היקרים שלנו.</span></p>
+                    <p><span style="font-weight: 400;">ובכן מערך של <a
+                                href="https://www.shirelhovalot.co.il/%d7%97%d7%91%d7%a8%d7%94-%d7%9c%d7%94%d7%95%d7%91%d7%9c%d7%95%d7%aa/">חברה
+                                להובלות</a> הוא מערך מאוד מסודר הבנוי ממחלקות אולם קיימים גם מובילים אשר מבצעים הובלה
+                            במרכז באופן עצמאי הם בעלי רכב גדול לרבות משאית קטנה ומובילים לבד את הדברים ברבו. ובכן עם
+                            התחרותיות שש כיום בשוק ההבלות הובלת דירה במרכז היא שירות שכל חברת הובלות מציעה כיום
+                            ללקוחותיה זאת אחרי שהובל תדירה במרכז הפכה להובלה המבוקשת ביותר בתחום ההובלות. אזור המרכז הוא
+                            אזור מאוכלס מאוד שמכיל בתוכו אחוז גבוה מאוד של סטודנטים על כן מעברי הדירה במרכז קורים לעיתים
+                            קרובות מאוד, כמו כן קיימים גם לא מעט אנשים שכל חייהם גרו רחוק והחליטו לעבור למרכז העניינים.
+                            הובלות במרכז היא הובלה מאוד מבוקשת.</span></p>
+                    <p><img fetchpriority="high" decoding="async" class="alignnone size-full wp-image-3620"
+                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201152%20768'%3E%3C/svg%3E"
+                            alt="הובלות במרכז" width="1152" height="768"
+                            data-lazy-srcset="https://www.shirelhovalot.co.il/wp-content/uploads/2017/12/file1430827053-0-Copy.jpg 1152w, https://www.shirelhovalot.co.il/wp-content/uploads/2017/12/file1430827053-0-Copy-300x200.jpg 300w, https://www.shirelhovalot.co.il/wp-content/uploads/2017/12/file1430827053-0-Copy-768x512.jpg 768w, https://www.shirelhovalot.co.il/wp-content/uploads/2017/12/file1430827053-0-Copy-1024x683.jpg 1024w"
+                            data-lazy-sizes="(max-width: 1152px) 100vw, 1152px"
+                            data-lazy-src="https://www.shirelhovalot.co.il/wp-content/uploads/2017/12/file1430827053-0-Copy.jpg"><noscript><img
+                                fetchpriority="high" fetchpriority="high" decoding="async"
+                                class="alignnone size-full wp-image-3620"
+                                src="https://www.shirelhovalot.co.il/wp-content/uploads/2017/12/file1430827053-0-Copy.jpg"
+                                alt="הובלות במרכז" width="1152" height="768"
+                                srcset="https://www.shirelhovalot.co.il/wp-content/uploads/2017/12/file1430827053-0-Copy.jpg 1152w, https://www.shirelhovalot.co.il/wp-content/uploads/2017/12/file1430827053-0-Copy-300x200.jpg 300w, https://www.shirelhovalot.co.il/wp-content/uploads/2017/12/file1430827053-0-Copy-768x512.jpg 768w, https://www.shirelhovalot.co.il/wp-content/uploads/2017/12/file1430827053-0-Copy-1024x683.jpg 1024w"
+                                sizes="(max-width: 1152px) 100vw, 1152px" /></noscript></p>
+                    <h2><span style="font-weight: 400;">לבצע את פעולת הובלות במרכז מבלי להתעייף כלל</span></h2>
+                    <p><span style="font-weight: 400;">הובלות במרכז הינה השלב בו אנו צריכים לקחת צעד אחד אחורה ולהבין כי
+                            השנים התקדמו וכיום קיימות שיטות מיוחדות לבצע את פעולת הובלות במרכז מבלי להתעייף כלל. כבר
+                            ציינו כי מעבר דירה למקום אחר הוא לא דבר פשוט שביל אדם על כן אין טעם להתעסק גם בפעולת ההובלה.
+                            הובלה תגרום לכם לקחת חופש מהעבודה ולעצור את שגרת חייכם וזה לא דבר שהייתם מעוניינים בו לכן
+                            לשכור אנדים מנוסים שיבצעו את המעבר במרכז במקומכם תהיה הצעד הנבון ביותר ותשחרר אתכם להתעסק
+                            במה שבאמת חשוב ולא בסבלות שיכול לגרום לכם לנזקים גופניים מהסיבה כי מובילים מקצועיים מובילים
+                            דירות והם מכירים ומשתמשים בשיטות הרמה וסחיבה שאדם מן השורה בטח לא יודע, מה שעלול לסרבל את
+                            מהלך ההובלה להאט את הקצב ולגרום לנזקים של חפצים יקרי ערך.</span></p>
+                    <p><span style="font-weight: 400;">על כל שיטות ההרמות והסחיבות נפרט בהמשך ונראה כיצד ניתן לעבוד כל
+                            כך הרב שעות בהובלה מבלי להתעייף או להיפצע חלילה. &nbsp;ובכן הובלות במרכז אולי נראית לגיבורים
+                            מבנינו דבר פשוט וקל שניתן לעשות אותו לבד. הובלות במרכז המכילה מוצרים כבדים כמו מקררים מערכות
+                            ישיבה תנורים או מדיח כלים מצריכה הרמות נכונות, לרוב המובילים שמובילים את הרהיטים יהיו גברים
+                            חסונים ומנוסים שיכולים לעבוד בהובלות במשך שעות מבלי להתעייף, הובלת דירה במרכז היא עבודה כזו
+                            שחוזק פיזי הוא אחד התנאי להתקבל לעבודה. אופי ההובלה מתנהל לפי התארגנותם של המובילים , זהו
+                            השלב הסופי בעת <a href="https://www.shirelhovalot.co.il/">הובלות דירות</a> ולכן נרחיב עליו
+                            מאוחר יותר.</span></p>
+                    <p><span style="font-weight: 400;">השלב הראשון אליו צריכים להתכונן תקופה זמן מראש בתהליך מעבר דירה
+                            הוא שלב האריזה של כל החפצים בתוך הבית. באופן כללי כל אדם נורמלי קר בכל בית אותו הוא שוכר או
+                            קונה תקופה ארוכה מאחר בית זהו לא מבנה אותו עוזבים כל יום. צעד כזה מצריך אריזת חפצים מסודרת
+                            וברורה וזאת כדי שבזמן הובלות במרכז ההובלה עצמה הכוללת העמסה של החפצים ופריקתם במקום היעד
+                            החדש תהיה כמה שיותר קצר, היא תתקרב אם לפני מעבר יארזו את העוברים את הברים כמו שצריך. כמו כן
+                            <strong>בהובלת דירה במרכז</strong> רוב הפעמים מעברים את החפצים כבדים כמו תנור מקרר מכונת
+                            כביסה שולחנות מערכות ישיבה ופסנתרים על כן יש לעטוף את כל המוצרים הגדולים כראוי. מה נחשבת
+                            אריזה כראוי בעת הובלות במרכז. צריך לעטוף את מוצרי החשמל הגדולים של הבית בניילון נצמד, או
+                            בניילון בועות וקלקר כל זאת בכדי שהמוצרים הגדולים שוודאי עלו לנו לא מעט כסף לא יפגמו או
+                            יינזקו בזמן המעבר.</span></p>
+                    <p><span style="font-weight: 400;">שלב האריזה בהובלת דירה מרכז הוא קריטי, את המוצרים הגדולים מרימים
+                            מובילים מקצועיים ביותר אשר מרימים חפצים בסדר גודל כזה כל יום אולם הם לא אחראים על מבנה המקום
+                            כמו קומה גבוה אשר אתם גרים בה חדרי מדרגות צרים, לכן חשבו מאוד שכל המוצרים יהיו עטופים היטב
+                            בל יגרם להם נזק כלשהו. כעת נזכיר עוד גורמים עשויים לעזור לנו לבצע את הובל תדירה במרכז באופן
+                            הכי נוח והכי פחות מבלבל תוך כדי שאנו זוכרים מה ארזנו ומה נשאר לארוז בכדי שנגיע לדירה החדשה
+                            נדע בדיוק בזמן הפירוק מה ארזנו , ככל שנכתוב כך נזכור יותר טוב מה הם החפצים שצריך לארוז ואת
+                            אלו שכבר ארזנו. עד כה אנו רואים כי השלב הראשון הוא תלוי בנו כאשר מתבצע המעבר אבל לכל
+                            המעוניינים קיימות לא מעט חברות שמציעות לקהל הלקוחות שלהם שירותי אריזת חפצים , כמו כן שירות
+                            זה נעשה כאשר בעלי הבית נמצאים בבית והם ראשיים לבדוק את שלב האריזה.</span></p>
+                    <p><span style="font-weight: 400;">לא מעט אנשים מבצעים הובלות דרך חברת הובלות ומבקשים את שירותי
+                            האריזה של החברה בכדי להימנע מעבודה מדוקדקת שלעיתים לא הכי בה להתעסק בה יחד עם כל הדברים
+                            שצריך לזכור כאשר עוברים דירה במרכז. אותם עובדים מטעם חברת ההובלות הם עובדים מנוסים אשר פעולת
+                            האריזה והאחסון תהיה מסודרת בצורה יוצאת דופן, חברות ההובלה מעניקות לעובדים שלהם את הכלים
+                            הטובים ביותר לעשות את עבודתם על הצד הטוב ביותר, ובכן אותם אורזים מקצועיים יודעים כיצד לבצע
+                            את האריזה בצור הכי מסודרת כך שבתום המעבר דירות הדיירים יפרקו את הארגזים ויגלו לראות שלא חסר
+                            דבר והכל מסודר כמו שצריך. <a
+                                href="https://www.shirelhovalot.co.il/%d7%94%d7%95%d7%91%d7%9c%d7%aa-%d7%93%d7%99%d7%a8%d7%94/">להובלת
+                                דירה</a> במרכז מגיעים עם הכלים המתאימים לאריזה כך ששלב האריזה יהיה קצר וקולע, ארגזים
+                            וקרטונים בגדלים שונים עם הפרדה בתוך הקרטון מדבקות לרשום על כל ארגז מה הוא מכיל ודבק גדול
+                            ומקצועי שיסגור את הקרטונים. <a
+                                href="https://www.shirelhovalot.co.il/%d7%94%d7%95%d7%91%d7%9c%d7%aa-%d7%93%d7%99%d7%a8%d7%94-%d7%9b%d7%95%d7%9c%d7%9c-%d7%90%d7%a8%d7%99%d7%96%d7%94/">הובלה
+                                ואריזה</a> יכולה להיעשות בקלות רבה כאשר שוכרים אדם או חברה שתבצע את ההובלה
+                            במקומך.</span></p>
+                    <p><span style="font-weight: 400;">כעת הגענו לשלב השלישי והאחרון של הובלות דירה במרכז. יצא לנו לראות
+                            כי הובלות דירה במרכז היא דבר לא פשוט וצריך להתכונן אליו היטב. השלב השלישי שם דגש חזק מאוד על
+                            שלב הפירוק וההשמה של החפצים ביעד החדש זהו שלב חשוב וקריטי אחרי הובלות דירה במרכז. פתיחת כל
+                            הארגזים ובדיקת כל החפצים , האם דבר נשבר ניזוק או נעלם ,זהו שלב בו אתם מגלים אם אכן ארזתם
+                            היטב או לא. הובלות דירה במרכז יכולה בעונות שונות לקחת יותר זמן על כן חברת ההובלה עשויה לשאול
+                            אתכם האם אתם מעוניינים לבצע את ההעמסה בנפרד ואת הפירוק בנפרד, באופן כללי אין כל צורך לדאוג
+                            מאחר וזו שאלה לגיטימית ובמידה ואתם אחרונים באותו יום ברשימת ההובלות והנכם מעדיפים לבצע את
+                            הפירוק מחר בבוקר ולא להיכנס ללילה של הובלות דירה במרכז.</span></p>
+                    <p><span style="font-weight: 400;">החפצים שלכם יישארו בתוך המשאית במקום בטוח שאיש לא יוכל להתקרב
+                            אליהם בדרך כלל בתוך חניון של חברת ההובלות. במידה ובחרת אכן לבצע את הובלות דירה במרכז בצורה
+                            כזאת שהפירוק יתבצע יום למחרת גם זה בסדר. עבודה כזאת יכולה לקחת גם יומיים הכי חשוב שלא תבזבזו
+                            את זמנכם על פעולת ההובלה עצמה. הובלות דירה במרכז היא דבר נפוץ ביותר ואתם לא היחידים על כן
+                            כדאי מאוד לדעת לעשות את הדברים נכון ובצע את הובלות דירה במרכז בעזרת שירותים המיועדים לכך.
+                            ובכן במידה ובדקתם את כל הארגזים ומצאתם פגם כל שהוא או שבר באחד הארגזים שפתחתם פנו אל החברה
+                            אותה שכרתם לבצע את הובלות דירה במרכז.</span></p>
+                    <p><span style="font-weight: 400;">סביר להניח כי תהיה לחברה פתרון למצב או החזר כספי בגין נזק לחפצים
+                            שלכם. זהו השלב השלישי והאחרון בביצוע הובלות דירה במרכז.</span></p>
+                    <p><span style="font-weight: 400;">לסיכום הובלת דירה במרכז כדאי ותתבצע בדרך מסודרת וכן כל הצדדים
+                            יהיו מרוצים ואתם הראשונים להיות ,מעבר אשר תאורגן בצורה נכונה ומסודרת תהיה קצרה וזולה הרבה
+                            יותר ממה שחשבתם שתהיה.</span></p>
+                </div>
+                <!-- ...тут добавляй любой контент -->
+            </article>
+
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-nav">
+            <h3 class="footer-title-list">ניווט מהיר</h3>
+            <ul class="footer-list text-white">
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">הובלות
+                        דירות</a></li>
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">הובלת
+                        דירה</a></li>
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">הובלות
+                        משרדים</a></li>
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">שירותי
+                        אחסון</a></li>
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">שירותים
+                        נוספים</a></li>
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">אודות</a>
+                </li>
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">צור קשר</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h3 class="footer-title-list">יצירת קשר</h3>
+            <ul class="footer-list">
+                <li class="footer-list_item"><a class="footer-list_item-link" href="tel:+9725280799448">טל':
+                        052-8078844</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">הובלת דירה</a></li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h3 class="footer-title-list">מידע שימושי</h3>
+            <ul class="footer-list">
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">המלצות לקוחות</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">שאלות ותשובות</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">English</a></li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h3 class="footer-title-list">מאמרים אחרונים</h3>
+            <ul class="footer-list">
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">מתכננים מעבר דירה? הטיפים שאתם
+                        חייבים לדעת</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">שירותי הובלות בחולון</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">מה כוללת הובלת דירה</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">שירותי סבלות מקצועיים ללקוח לאחר
+                        ביצוע הובלה</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">העברת דירה במרכז</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../js/burger-menu.js"></script>
+    <script src="../js/whatsappBtn.js"></script>
+    <script src="../js/active-link-hover.js"></script>
+</body>
+
+</html>
