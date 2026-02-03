@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const link = normalize(linkUrl.pathname);
 
     // отладка
-    console.log("current:", current, "| link:", link);
+    // console.log("current:", current, "| link:", link);
 
     // подсветка
     if (current === link) a.classList.add("active");

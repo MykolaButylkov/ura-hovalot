@@ -28,9 +28,9 @@ function renderCards(page) {
       "block bg-white rounded-lg border border-gray-200 shadow-sm p-6 hover:shadow-md transition";
 
     card.innerHTML = `
-      <h3 class="text-lg font-bold text-[#684597] mb-3">${a.title}</h3>
+      <h3 style="color: #684597" class="text-lg font-bold text-[#684597] mb-3">${a.title}</h3>
       <p class="text-gray-600 leading-relaxed mb-4">${a.excerpt}</p>
-      <span class="text-[#684597] font-semibold">קרא עוד</span>
+      <span style="color: #684597" class="text-[#684597] font-semibold">קרא עוד</span>
     `;
 
     cardsEl.appendChild(card);
@@ -84,7 +84,7 @@ function goToPage(page) {
 async function init() {
   currentPage = getPageFromUrl();
 
-  const res = await fetch("./data/articles.json");
+  const res = await fetch("../data/articles.json");
   allArticles = await res.json();
 
   const totalPages = Math.ceil(allArticles.length / CARDS_PER_PAGE);

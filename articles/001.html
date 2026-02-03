@@ -1,19 +1,299 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
-  <title>מאמר</title>
-</head>
-<body class="bg-gray-50">
-  <main class="max-w-[900px] mx-auto p-6 bg-white mt-8 rounded shadow">
-    <a href="../articles.html" class="text-[#684597] font-semibold">← חזרה למאמרים</a>
 
-    <h1 class="text-3xl font-bold mt-4 mb-4">מאמרי מידע לזמן מעבר דירה</h1>
-    <p class="text-gray-700 leading-7">
-      כאן יהיה הטקסט המלא של המאמר...
-    </p>
-  </main>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <title>מאמר</title>
+</head>
+
+<body class="bg-gray-50">
+    <header>
+        <div class="header-container">
+            <div class="header_icons">
+                <a href="tel:+9725280799448" class="icon icons-phone" aria-label="Позвонить">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+
+                <a href="#form-home-page" class="icon icons-message">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path
+                            d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                        <path
+                            d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                    </svg>
+
+                </a>
+                <a id="waBtn" href="https://wa.me/9725280799448" target="_blank" rel="noopener"
+                    class="icon icons-whatsapp" aria-label="Написать в WhatsApp" class="icon icons-whatsapp"><svg
+                        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                        <path fill="#fff"
+                            d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6	C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z">
+                        </path>
+                        <path fill="#fff"
+                            d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z">
+                        </path>
+                        <path fill="#cfd8dc"
+                            d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3	L4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z">
+                        </path>
+                        <path fill="#40c351"
+                            d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8	l6-1.6l0.6,0.3c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z">
+                        </path>
+                        <path fill="#fff" fill-rule="evenodd"
+                            d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0	s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3	c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9	c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8	c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8C20.6,19.3,19.7,17,19.3,16z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+            <nav class="nav_list">
+                <ul class="nav_items">
+                    <li class="nav_item"><a class="nav_link active"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/">הובלות דירות</a></li>
+                    <li class="nav_item"><a class="nav_link"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/הובלת-דירה/">הובלת דירה</a></li>
+                    <li class="nav_item"><a class="nav_link"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/הובלות-משרדים/">הובלות משרדים</a></li>
+                    <li class="nav_item"><a class="nav_link"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/שירותי-אחסנה/">שירותי אחסון</a></li>
+                    <li class="nav_item"><a class="nav_link"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/שירותים/">שירותים נוספים</a></li>
+                    <li class="nav_item"><a class="nav_link"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/אודות-2/">אודות</a></li>
+                    <li class="nav_item"><a class="nav_link"
+                            href="https://mykolabutylkov.github.io/ura-hovalot/צור-קשר/">צור קשר</a></li>
+                </ul>
+            </nav>
+
+            <img class="header-logo" src="../img/logo2.png" alt="Alexo hovalot">
+
+            <button class="burger" aria-label="Меню" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+    <div style="height: 100px;"></div>
+    <main class="max-w-[1140px] mx-auto px-4 py-8">
+        <p class="mb-8"><span><a style="color: #6b45a7" class="text-sm" href="https://mykolabutylkov.github.io/ura-hovalot/">הובלות דירות</a>  » <a style="color: #6b45a7" class="text-sm" href="https://mykolabutylkov.github.io/ura-hovalot/שירותים/">שירותים נוספים</a></span> </p>  
+        <!-- 2 колонки: контент + сайдбар -->
+        <div class="grid grid-cols-1 sm:grid-cols-3  lg:grid-cols-[1fr_3fr] gap-10 items-start">
+            <!-- ПРАВЫЙ САЙДБАР -->
+            <aside class="order-2 sm:order-1 lg:sticky lg:top-6">
+                <div style="max-width: 320px;" class="max-w-[320px] lg:max-w-none bg-white">
+                    <!-- Вставь сюда блок сайдбара из следующего раздела -->
+
+                    <!-- SIDEBAR START -->
+                    <div class="text-right">
+
+                        <!-- Заголовок -->
+                        <h2 class="text-xl font-bold text-black">
+                            שירותי החברה
+                        </h2>
+
+                        <!-- Навигация -->
+                        <nav class="mt-4">
+                            <ul class="space-y-3 text-[15px]">
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/">הובלות דירות</a></li>
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/הובלת-דירה/">הובלת דירה</a>
+                                </li>
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/הובלות-משרדים/">הובלות
+                                        משרדים</a></li>
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/שירותי-אחסנה/">שירותי
+                                        אחסון</a></li>
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/שירותים/">שירותים נוספים</a>
+                                </li>
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/אודות-2/">אודות</a></li>
+                                <li><a style="color: #6b45a7" class="block text-[#6b45a7] hover:bg-gray-200"
+                                        href="https://mykolabutylkov.github.io/ura-hovalot/צור-קשר/">צור קשר</a></li>
+                            </ul>
+                        </nav>
+
+                        <!-- Линия -->
+                        <div class="my-6 h-px w-full bg-black"></div>
+
+                        <!-- Посты -->
+                        <h3 class="text-lg font-bold text-black">פוסטים נוספים:</h3>
+
+                        <div class="mt-4 space-y-6">
+                            <article>
+                                <p class="text-sm leading-6 text-gray-600">
+                                    איך בחירת רכב תפעולי נכון יכולה לשנות את פני העסק
+                                </p>
+                                <a style="color: #6b45a7"
+                                    class="mt-2 inline-block text-sm text-[#6b45a7] hover:underline"
+                                    href="../articles/016.html">קרא עוד</a>
+                            </article>
+
+                            <article>
+                                <h4 class="font-bold text-black leading-snug">
+                                    המדריך להובלות של מבנים ניידים
+                                </h4>
+                                <p class="mt-1 text-sm leading-6 text-gray-500">
+                                    המדריך להובלות של מבנים ניידים הובלת מבנים ניידים היא משימה…
+                                </p>
+                                <a style="color: #6b45a7"
+                                    class="mt-2 inline-block text-sm text-[#6b45a7] hover:underline"
+                                    href="../articles/017.html">קרא עוד</a>
+                            </article>
+
+                            <article>
+                                <h4 class="font-bold text-black leading-snug">
+                                    היתרונות של הובלת דירה עם חברת הובלות
+                                </h4>
+                                <p class="mt-1 text-sm leading-6 text-gray-500">
+                                    היתרונות של הובלת דירה עם חברת הובלות…
+                                </p>
+                                <a style="color: #6b45a7"
+                                    class="mt-2 inline-block text-sm text-[#6b45a7] hover:underline"
+                                    href="../articles/018.html">קרא עוד</a>
+                            </article>
+                        </div>
+
+                        <!-- Линия -->
+                        <div class="my-6 h-px w-full bg-black/60"></div>
+
+                        <!-- Кнопка -->
+                        <a href="#"
+                            class="block w-full rounded-md bg-slate-600 py-3 text-center font-semibold text-white hover:bg-slate-700 transition">
+                            הצעת מחיר בקליק!
+                        </a>
+
+                        <!-- Телефон -->
+                        <a class="mt-4 block text-center text-[#6b45a7] font-medium" href="tel:+972723307828">
+                            טל': 052-80788448
+                        </a>
+
+                        <!-- Facebook -->
+                        <a class="mt-2 block text-center text-[#6b45a7] hover:underline" href="#" target="_blank"
+                            rel="noopener">
+                            עמוד פייסבוק
+                        </a>
+                    </div>
+                    <!-- SIDEBAR END -->
+
+                </div>
+            </aside>
+
+            <!-- ЛЕВЫЙ КОНТЕНТ -->
+            <article class="gtid col-span-2 order-1 min-w-0 lg:order-2">
+                <div>
+                    <h1><b class="text-xl sm:text-3xl">איך בחירת רכב תפעולי נכון יכולה לשנות את פני העסק שלך</b></h1>
+                    <p><span style="font-weight: 400;">בחירת רכב תפעולי נכון היא אחת ההחלטות הקריטיות ביותר שעשויות
+                            להשפיע על ההצלחה של כל עסק. השקעה בכלי רכב שמתאים במדויק לצרכים התפעוליים שלכם יכולה לייעל
+                            את זרימת העבודה בצורה משמעותית, לשפר את התפוקה ולהפחית עלויות לטווח הארוך. </span><b>תוכן
+                            הנהיגה הנכון יכול לא רק לשפר את היעילות התפעולית אלא גם להעניק לעסק יתרון תחרותי בשוק.</b>
+                    </p>
+                    <p><span style="font-weight: 400;">בחיפוש אחרי הרכב התפעולי האידיאלי, יש לקחת כמה גורמים בחשבון.
+                            צריכת הדלק וההשפעה הסביבתית הם קריטיים במיוחד כיום, כאשר עלויות הדלק וטיפול בסביבה הם נושאים
+                            רגישים ביותר. כלי רכב היברידיים או חשמליים יכולים לצמצם את העלויות ולהיות יותר ידידותיים
+                            לסביבה, מה שמוסיף ערך ייחודי לעסק.</span></p>
+                    <p><span style="font-weight: 400;">לפי </span><a href="https://hatavor-motor.co.il/"><span
+                                style="font-weight: 400;">המומחים של התבור רכב תפעולי</span></a><span
+                            style="font-weight: 400;">, אין ספק שבחירת רכב תפעולי מתאים מצריכה גם מחשבה על הבטיחות
+                            ואמינות הכלי רכב. הבטיחות חייבת לעמוד בראש סדר העדיפויות כדי להגן על הנהגים ולמנוע תאונות.
+                            כשכל אלה נשקלים נכון, הבחירה המושכלת ברכב יכולה לשפר את פני העסק בצורה משמעותית.</span></p>
+                    <p><b>התאמת רכב תפעולי לצרכים הספציפיים של העסק</b></p>
+                    <p><span style="font-weight: 400;">בחירת רכב תפעולי נכון היא קריטית לכל עסק. היא יכולה להשפיע על
+                            יעילות העבודה, חוויית העובדים והאופן שבו העסק מציג את עצמו בפני לקוחותיו.</span></p>
+                    <h3><b>ניתוח צרכי העסק והעובדים</b></h3>
+                    <p><span style="font-weight: 400;">לפני שמחליטים על רכב תפעולי, חשוב להבין בצורה מדויקת את צרכי העסק
+                            והעובדים.</span></p>
+                    <p><span style="font-weight: 400;">מהן המשימות שהרכב אמור לבצע? האם מדובר בהובלת סחורות כבדות או
+                            נסיעות קצרות בתוך אזור מוגדר? יש לזכור גם את תנאי השטח בהם יעשה השימוש ברכב – אם הן דרכים
+                            עירוניות או כפריות.</span></p>
+                    <p><span style="font-weight: 400;">בנוסף, כדאי להתייחס לכמות הנוסעים והציוד שהרכב יידרש לשאת. האם
+                            יהיה צורך במקומות ישיבה נוספים או מספיק רק מקום לסחורות? כל אלה הם חשובים כדי להבטיח שהרכב
+                            יענה בצורה מיטבית על הדרישות.</span></p>
+                    <h3><b>שיקולי תועלת ביחס לעלות</b></h3>
+                    <p><span style="font-weight: 400;">בחירת רכב תפעולי מחייבת בחינה קפדנית של העלות המול תועלת.</span>
+                    </p>
+                    <p><span style="font-weight: 400;">עלות הרכישה היא רק חלק מהתמונה. גם עלויות תחזוקה, תדלוק, ביטוח,
+                            וחלפים יש לקחת בחשבון. עסקים צריכים לשקול אם הבעלות על הרכב תהיה משתלמת יותר מליסינג תפעולי,
+                            הכולל תחזוקה ותיקונים.</span></p>
+                    <p><span style="font-weight: 400;">בנוסף, אם הרכב נועד לנסיעות רבות, חשוב לבדוק את צריכת הדלק שלו
+                            כדי לוודא שאין הוצאות מיותרות.</span></p>
+                    <p><span style="font-weight: 400;">בסופו של דבר, בחירת הרכב התפעולי הנכון תביא לחיסכון במשאבים,
+                            תייעל את העבודה, ותספק לעובדים כלים שיקלו עליהם לבצע את עבודתם בצורה הטובה ביותר.</span></p>
+                    <h2><b>שיקולים פיננסיים ומיסוי בבחירת רכב תפעולי</b></h2>
+                    <p><span style="font-weight: 400;">בבחירת רכב תפעולי יש לשקול את העלויות הכלכליות והמיסויות, וזאת
+                            מכיוון שהן יכולות להשפיע משמעותית על התקציב ועל ההוצאות הנלוות.</span></p>
+                    <h3><b>הבנת המסגרת התקציבית והעלויות הנלוות</b></h3>
+                    <p><span style="font-weight: 400;">בחירת רכב תפעולי כרוכה בהבנת כל המשתנים הקשורים להוצאה זו. יש
+                            לנתח את העלויות הנלוות הכוללות אחזקה, ביטוח ודלק. רכבים תפעוליים נדרשים לעיתים קרובות לעבוד
+                            בתנאים קשים, מה שמחייב תשומת לב מיוחדת לשירותי תחזוקה ושמירה על תקינותם לאורך זמן.</span>
+                    </p>
+                    <p><span style="font-weight: 400;">בנוסף, חשוב להבין את העלויות הכוללות של הרכב לאורך זמן. לא מדובר
+                            רק בקנייה הראשונית אלא גם בתשלומי השירות והאחזקה שצריך לקחת בחשבון. יש לבדוק את ההיסטוריה של
+                            הדגם הנבחר, לוודא שיש לו זמינות גבוהה של חלקי חילוף ולבחור רכב שמתאים לתנאי העבודה.</span>
+                    </p>
+                    <h3><b>התמודדות עם נושאי מיסוי והטבות</b></h3>
+                    <p><span style="font-weight: 400;">בבחירות רכב תפעולי ישנם נושאי מיסוי והטבות שיש לקחת אותם בחשבון.
+                            קיימים חוקים ותקנות ספציפיים שמאפשרים ניכויי הוצאות מסוימות על רכבים תפעוליים.</span></p>
+                    <p><span style="font-weight: 400;">לדוגמה, אם הרכב משמש אך ורק לעבודה ואינו משמש לשימוש פרטי, ייתכן
+                            שהוצאות הנוגעות לרכב יהיו מוכרות לניכוי במס. כמו כן, יש לבחון את היתרונות בליסינג תפעולי, בו
+                            הלקוח משלם תשלום חודשי קבוע שכולל את כל השירותים הנלווים. זה יכול להפוך את ניהול התקציב
+                            לפשוט יותר ולקבוע את העלויות מראש בצורה ברורה.</span></p>
+                    <h2><b>מימון רכב תפעולי: דגמים ואפשרויות</b></h2>
+                    <p><span style="font-weight: 400;">בחירת מימון לרכב תפעולי היא החלטה משמעותית שיש לה השלכות כלכליות
+                            על העסק. המימון יכול להיות באמצעות שכירות תפעולית או ליסינג פיננסי, עם הבדלים מהותיים לגבי
+                            עלויות, שירותים כלולים והחזר על ההשקעה.</span></p>
+                    <h3><b>שכירות תפעולית וליסינג פיננסי</b></h3>
+                    <p><span style="font-weight: 400;">שכירות תפעולית כוללת דמי שכירות עבור הרכב, אגרת רישוי, ביטוח
+                            וטיפולים שוטפים. המודל מתאים לעסקים שרוצים חבילה כוללת של שירותים ללא צורך להשקיע בטיפולים
+                            ואחזקת הרכב.</span></p>
+                    <p><span style="font-weight: 400;">לעומת זאת, ליסינג פיננסי נותן לעסק את ההזדמנות לרכוש את הרכב בתום
+                            התקופה, מה שמאפשר נכס בעל ערך בעתיד.</span></p>
+                    <h3><b>השוואת אפשרויות מימון והחזר השקעה</b></h3>
+                    <p><span style="font-weight: 400;">בבחירת המודל המתאים יש להעריך את הצרכים התפעוליים אל מול התקציב
+                            העומד לרשות העסק. שכירות תפעולית מציעה פחות דאגות תפעוליות, אך עלותה עלולה להיות גבוהה יותר
+                            לאורך זמן.</span></p>
+                    <p><span style="font-weight: 400;">ליסינג פיננסי מתאים לעסקים ששואפים לרכוש את הרכב ולהפוך אותו
+                            לנכס, עם אפשרויות להחזיר חלק מההשקעה במכירתו בעתיד. כל מודל מצריך שקילה ודקדוק כדי לבחור
+                            באפשרות המתאימה ביותר שתשרת את העסק בטווח הארוך.</span></p>
+                    <h2><b>יישום וניהול מדיניות רכב תפעולי בארגון</b></h2>
+                    <p><span style="font-weight: 400;">ניהול נכון של רכב תפעולי בארגון יכול להוביל לחסכון משמעותי
+                            בעלויות ולהגברת היעילות התפעולית. יש לבחון את התהליכים המרכזיים ואת האופן בו ניתן להתאים
+                            ולפתח את מדיניות הרכב בהתאם לצרכים המשתנים.</span></p>
+                    <h3><b>קביעת תהליכים ואחריות בניהול הצי</b></h3>
+                    <p><span style="font-weight: 400;">קביעת תהליכים ברורים ואחריות ניהולית הם חלק חשוב מהצלחת ניהול צי
+                            רכבים. על הארגון לבצע מיפוי ובחינה של כל מערכות התחזוקה, התאמת הרכבים לצרכים תפעוליים והבטחת
+                            עמידה בתקנים ובדרישות חוקיות.</span></p>
+                    <p><span style="font-weight: 400;">חובה להגדיר מדיניות תחזוקה שתואמת את הדרישות הפנימיות והחיצוניות,
+                            ולהתאים את פלטפורמת המעקב אחרי תחזוקות טיפוסיות לרכבים. ניהול קפדני של תחזוקת הרכבים יפחית
+                            סיכונים לפגיעות ויבטיח אורך חיים ארוך יותר.</span></p>
+                    <h3><b>דינמיקה ושינויים במדיניות תפעולית</b></h3>
+                    <p><span style="font-weight: 400;">העולם התפעולי אינו סטטי ודורש מדיניות גמישה ודינמית. יש צורך
+                            לבחון ולהתאים את המדיניות התפעולית לצורכי הארגון במועדים קבועים. אימוץ טכנולוגיות חדשות
+                            ועדכון מערכות המידע מאפשרים לנהל בצורה טובה יותר את הפתרונות התפעוליים.</span></p>
+                    <p><span style="font-weight: 400;">באופן קבוע, יש לבחון את הביצועים של הרכבים ויעילותם, לבדוק האם יש
+                            צורך בשינויים או בהוספת רכבים לסיוע למשימות נוספות.</span></p>
+                    <p><span style="font-weight: 400;">ניהול מדיניות רכב תפעולי בצורה דינמית מבטיח תפעול חלק, עמידות
+                            כלים גבוהה ושירות לקוחות משופר.</span></p>
+                </div>
+                <!-- ...тут добавляй любой контент -->
+            </article>
+
+
+        </div>
+    </main>
+    <script src="../js/burger-menu.js"></script>
+    <script src="../js/whatsappBtn.js"></script>
+    <script src="../js/active-link-hover.js"></script>
 </body>
+
 </html>
