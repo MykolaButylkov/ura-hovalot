@@ -17,7 +17,7 @@
     <header>
         <div class="header-container">
             <div class="header_icons">
-                <a href="tel:+9725280799448" class="icon icons-phone" aria-label="Позвонить">
+                <a href="tel:+972528078844" class="icon icons-phone" aria-label="Позвонить">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                         <path fill-rule="evenodd"
                             d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
@@ -34,7 +34,7 @@
                     </svg>
 
                 </a>
-                <a id="waBtn" href="https://wa.me/9725280799448" target="_blank" rel="noopener"
+                <a id="waBtn" href="https://wa.me/972528078844" target="_blank" rel="noopener"
                     class="icon icons-whatsapp" aria-label="Написать в WhatsApp" class="icon icons-whatsapp"><svg
                         xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
                         <path fill="#fff"
@@ -179,8 +179,8 @@
                         </a>
 
                         <!-- Телефон -->
-                        <a class="mt-4 block text-center text-[#6b45a7] font-medium" href="tel:+972723307828">
-                            טל': 052-80788448
+                        <a class="mt-4 block text-center text-[#6b45a7] font-medium" href="tel:+972528078844">
+                            טל': 052-8078844
                         </a>
                     </div>
                     <!-- SIDEBAR END -->
@@ -288,7 +288,7 @@
         <div class="footer-nav">
             <h3 class="footer-title-list">יצירת קשר</h3>
             <ul class="footer-list">
-                <li class="footer-list_item"><a class="footer-list_item-link" href="tel:+9725280799448">טל':
+                <li class="footer-list_item"><a class="footer-list_item-link" href="tel:+972528078844">טל':
                         052-8078844</a></li>
                 <li class="footer-list_item"><a class="footer-list_item-link" href="#">הובלת דירה</a></li>
             </ul>
@@ -315,6 +315,79 @@
         </div>
     </footer>
 
+    <!-- BUTTON: открыть форму -->
+    <button id="openLead" style="background-color: #6b45a7;"
+        class="fixed flex text-center gap-4 right-4 bottom-4 z-40  rounded-full bg-[#6b45a7] px-5 py-3 font-bold text-white shadow-lg hover:opacity-90">
+        <div class="w-20px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="size-6 w-5">
+                <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                <path
+                    d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+            </svg>
+        </div> הצעת מחיר בקליק!
+    </button>
+
+    <!-- OVERLAY -->
+    <div id="leadOverlay" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
+
+        <!-- MODAL -->
+        <div class="relative w-full max-w-[720px] rounded-[14px] bg-white p-4 sm:p-6">
+
+            <!-- CLOSE -->
+            <button id="closeLead" class="absolute left-3 top-3 z-50 rounded-full p-2 text-[#2b1b57] hover:bg-black/5"
+                aria-label="Close">
+                ✕
+            </button>
+
+            <!-- CONTENT WRAP -->
+            <div class="relative overflow-hidden rounded-[14px]">
+
+                <!-- PURPLE CAPSULE BACKGROUND -->
+                <div class="absolute inset-x-4 top-16 bottom-4 rounded-[999px] bg-[#6b45a7]"></div>
+
+                <!-- FOREGROUND -->
+                <div class="relative px-6 pb-8 pt-6 sm:px-10 sm:pb-10">
+
+                    <!-- IMAGE -->
+                    <div class="mx-auto -mt-2 flex justify-center">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop"
+                            alt="Mover" style="width: 300px;" class="h-[100px]select-none object-contain" />
+                    </div>
+
+                    <!-- TITLE -->
+                    <div class="mt-2 text-center">
+
+                        <h2 class="text-[28px] sm:text-[34px] font-bold leading-tight text-purple-500 drop-shadow">
+                            הצעת מחיר בקליק!
+                        </h2>
+                        <p class="mt-2 text-[18px] sm:text-[22px] font-bold text-purple-500 drop-shadow">
+                            מלאו פרטים או התקשרו: 052-8078844
+                        </p>
+                    </div>
+
+                    <!-- FORM -->
+                    <form id="leadFormSecond" class="mx-auto mt-6 max-w-[560px] space-y-4">
+                        <input id="leadName2" name="name" type="text" placeholder="איך קוראים לך?"
+                            class="w-full rounded-md border border-black/10 bg-white px-4 py-3 text-right text-[16px] outline-none focus:ring-2 focus:ring-yellow-300"
+                            required />
+                        <input id="leadPhone2" name="phone" type="tel" placeholder="מה הטלפון שלך?"
+                            class="w-full rounded-md border border-black/10 bg-white px-4 py-3 text-right text-[16px] outline-none focus:ring-2 focus:ring-yellow-300"
+                            required />
+
+                        <button type="submit"
+                            class="mx-auto block rounded-md bg-yellow-300 px-10 py-3 text-[18px] font-extrabold text-black shadow hover:brightness-95">
+                            שלח כעת!
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../js/second-form.js"></script>
     <script src="../js/burger-menu.js"></script>
     <script src="../js/whatsappBtn.js"></script>
     <script src="../js/active-link-hover.js"></script>
