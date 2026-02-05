@@ -1,0 +1,21 @@
+/* затемнение со сдвигом от верха */
+.bg-dark-overlay {
+  position: relative;
+}
+
+.bg-dark-overlay::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;      /* ВОТ ОНО */
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.bg-dark-overlay > * {
+  position: relative;
+  z-index: 2;
+}

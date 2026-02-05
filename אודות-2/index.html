@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/faveicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles-about-page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 
 <body>
-    <header>
+    <header class="z-40">
         <div class="header-container">
             <div class="header_icons">
                 <a href="tel:+972528078844" class="icon icons-phone" aria-label="Позвонить">
@@ -82,6 +84,170 @@
             </button>
         </div>
     </header>
+    <div style="height: 100px; position: relative;"></div>
+
+    <div style="background-image: url('../img/about-img-track.jpg');"
+        class="relative  h-screen bg-no-repeat bg-cover bg-center">
+        <!-- затемнение -->
+        <div class="absolute inset-0 h-screen bg-dark-overlay"></div>
+
+        <!-- если внутри будет текст -->
+        <div class="relative z-10 flex flex-col h-full p-10 items-start justify-center text-white">
+            <!-- твой контент -->
+            <h1 class="text-2xl font-bold sm:text-4xl ">אלכסו הובלות אודות חברת</h1>
+            <p>חברת אלכסו הובלות הוקמה במטרה לשפר את תחום ההובלות והעברת הדירות והמשרדים ברחבי הארץ, ולהעניק ללקוחותיה
+                שירות מקצועי, בטוח ואמין ברמה הגבוהה ביותר.
+
+                במהלך שנות פעילותה צברה אלכסו הובלות ניסיון רב, ידע מקצועי וכלים מתקדמים המאפשרים לה לבצע הובלות דירות,
+                הובלות משרדים ושינוע תכולה פרטית ועסקית בצורה היעילה והבטוחה ביותר.
+
+                הצוות המיומן של אלכסו הובלות מקפיד על עבודה מסודרת, יחס אישי ושמירה קפדנית על תכולת הלקוח, תוך שימוש
+                בציוד מקצועי, אריזות איכותיות ושיטות עבודה מתקדמות המבטיחות מעבר חלק וללא תקלות.</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper my-10">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="../img/1.png" alt="1" class="w-full object-cover rounded-md" />
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../img/2.png" alt="2" class="w-full object-cover rounded-md" />
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../img/3.png" alt="3" class="w-full object-cover rounded-md" />
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../img/4.png" alt="4" class="w-full object-cover rounded-md" />
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../img/5.png" alt="5" class="w-full object-cover rounded-md" />
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../img/6.png" alt="6" class="w-full object-cover rounded-md" />
+            </div>
+
+        </div>
+
+        <!-- Навигация -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Точки -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="max-w-[1200px] mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            חברת הובלות מקצועית
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <!-- CARD 1 -->
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+                <div class="relative h-[260px] overflow-hidden">
+                    <img src="../img/about-1.jpg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                </div>
+                <div class="bg-[#1f2329] p-8 text-right min-h-[180px] flex flex-col justify-between">
+                    <p class="text-xl font-bold leading-relaxed">
+                        העברת תכולת דירה בצורה בטוחה ומסודרת עם צוות מקצועי.
+                    </p>
+                    <div class="w-12 h-1 bg-yellow-400 mt-6"></div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+                <div class="relative h-[260px] overflow-hidden">
+                    <img src="../img/about-2.jpg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                </div>
+                <div class="bg-[#1f2329] p-8 text-right min-h-[180px] flex flex-col justify-between">
+                    <p class="text-xl font-bold leading-relaxed">
+                        פירוק והרכבה מקצועית של רהיטים ושמירה על שלמותם.
+                    </p>
+                    <div class="w-12 h-1 bg-yellow-400 mt-6"></div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+                <div class="relative h-[260px] overflow-hidden">
+                    <img src="../img/about-3.jpg"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                </div>
+                <div class="bg-[#1f2329] p-8 text-right min-h-[180px] flex flex-col justify-between">
+                    <p class="text-xl font-bold leading-relaxed">
+                        הובלת משרדים ועסקים בצורה מהירה ללא פגיעה בשגרת העבודה.
+                    </p>
+                    <div class="w-12 h-1 bg-yellow-400 mt-6"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-nav">
+            <h3 class="footer-title-list">ניווט מהיר</h3>
+            <ul class="footer-list text-white">
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">הובלות
+                        דירות</a></li>
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">הובלת
+                        דירה</a></li>
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">הובלות
+                        משרדים</a></li>
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">שירותי
+                        אחסון</a></li>
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">שירותים
+                        נוספים</a></li>
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">אודות</a>
+                </li>
+                <li class="footer-list_item"><a style="color: white;" class="footer-list_item-link" href="#">צור קשר</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h3 class="footer-title-list">יצירת קשר</h3>
+            <ul class="footer-list">
+                <li class="footer-list_item"><a class="footer-list_item-link" href="tel:+972528078844">טל':
+                        052-8078844</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">הובלת דירה</a></li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h3 class="footer-title-list">מידע שימושי</h3>
+            <ul class="footer-list">
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">המלצות לקוחות</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">שאלות ותשובות</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">English</a></li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h3 class="footer-title-list">מאמרים אחרונים</h3>
+            <ul class="footer-list">
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">מתכננים מעבר דירה? הטיפים שאתם
+                        חייבים לדעת</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">שירותי הובלות בחולון</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">מה כוללת הובלת דירה</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">שירותי סבלות מקצועיים ללקוח לאחר
+                        ביצוע הובלה</a></li>
+                <li class="footer-list_item"><a class="footer-list_item-link" href="#">העברת דירה במרכז</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <!-- BUTTON: открыть форму -->
     <button id="openLead" style="background-color: #6b45a7;"
@@ -154,11 +320,13 @@
     </div>
 
 
-
+    <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/slider-about-page.js"></script>
     <script src="../js/second-form.js"></script>
     <script src="../js/burger-menu.js"></script>
     <script src="../js/whatsappBtn.js"></script>
     <script src="../js/active-link-hover.js"></script>
+
 </body>
 
 </html>

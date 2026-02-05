@@ -2,7 +2,6 @@
   const openBtn  = document.getElementById("openLead");
   const closeBtn = document.getElementById("closeLead");
 
-  console.log("overlay:", overlay, "openBtn:", openBtn, "closeBtn:", closeBtn);
 
   function openModal() {
     overlay.classList.remove("hidden");
