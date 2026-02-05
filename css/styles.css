@@ -461,6 +461,7 @@ nav {}
 }
 
 .footer {
+    margin-top: 40px;
     background-color: #684597;
     padding: 12px;
     color: #fff;
